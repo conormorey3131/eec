@@ -148,29 +148,31 @@ export function Hero({
             {/* Stats row */}
             {stats && (
               <div
-                className="grid grid-cols-3 gap-8 mt-20 pt-12 border-t border-ivory-100/10 animate-fade-up opacity-0"
+                className="mt-16 sm:mt-20 pt-10 sm:pt-12 border-t border-ivory-100/10 animate-fade-up opacity-0"
                 style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}
               >
-                {stats.map((stat, idx) => (
-                  <div key={idx}>
-                    <div className="font-display text-4xl sm:text-5xl text-ivory-100 font-medium tracking-tight">
-                      {stat.value}
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
+                  {stats.map((stat, idx) => (
+                    <div
+                      key={idx}
+                      className="flex flex-col items-center sm:items-start text-center sm:text-left"
+                    >
+                      <div className="font-display text-3xl sm:text-4xl lg:text-5xl text-ivory-100 font-semibold tracking-tight">
+                        {stat.value}
+                      </div>
+                      <div className="text-xs text-ivory-400/80 mt-2 uppercase tracking-widest">
+                        {stat.label}
+                      </div>
                     </div>
-                    <div className="text-sm text-ivory-400 mt-1 uppercase tracking-wider">
-                      {stat.label}
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             )}
           </div>
         </Container>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-ivory-400 animate-pulse-subtle">
-          <span className="text-xs uppercase tracking-widest">Scroll</span>
-          <div className="w-px h-8 bg-gradient-to-b from-copper-500 to-transparent" />
-        </div>
+        {/* Gradient fade to next section */}
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-forest-950 to-transparent pointer-events-none" />
       </section>
     )
   }
