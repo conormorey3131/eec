@@ -138,6 +138,21 @@ export function Footer() {
             </Link>
           </div>
         </div>
+
+        {/* Credit */}
+        <div className="pb-6 text-center">
+          <p className="text-xs text-ivory-500/60">
+            Powered by{' '}
+            <a
+              href="https://moreydigital.ie"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ivory-400/80 hover:text-copper-400 transition-colors"
+            >
+              Morey Digital
+            </a>
+          </p>
+        </div>
       </Container>
     </footer>
   )
