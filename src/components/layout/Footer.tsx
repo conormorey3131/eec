@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Container } from '@/components/ui/Container'
 import { PhoneIcon, EmailIcon, CoverageIcon } from '@/components/ui/Icons'
 import { COMPANY, FOOTER_LINKS, PHONE_URL } from '@/lib/constants'
@@ -21,16 +22,14 @@ export function Footer() {
         <div className="py-16 sm:py-20 grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* Company info */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link href="/" className="inline-flex items-center gap-3 mb-6 group">
-              <div className="w-11 h-11 rounded-lg bg-ivory-100 flex items-center justify-center transition-transform duration-300 group-hover:rotate-3">
-                <span className="font-display text-forest-900 text-lg font-medium">EE</span>
-              </div>
-              <div>
-                <span className="block font-display text-ivory-100 font-medium">
-                  Efficient Energy
-                </span>
-                <span className="block text-xs text-ivory-400">Consultancy</span>
-              </div>
+            <Link href="/" className="inline-block mb-6 group">
+              <Image
+                src="/logo.png"
+                alt="Efficient Energy Consultancy"
+                width={400}
+                height={120}
+                className="h-20 w-auto brightness-0 invert object-contain transition-transform duration-300 group-hover:scale-105"
+              />
             </Link>
             <p className="text-sm text-ivory-400 mb-8 max-w-xs leading-relaxed">
               Professional EU Taxonomy Reports, BER Certificates, and energy

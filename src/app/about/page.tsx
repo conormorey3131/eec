@@ -1,5 +1,4 @@
 import { Metadata } from 'next'
-import Image from 'next/image'
 import { Container } from '@/components/ui/Container'
 import { TrustBadges } from '@/components/sections/TrustBadges'
 import { CTABanner } from '@/components/sections/CTABanner'
@@ -8,7 +7,6 @@ import { CheckIcon, ExperienceIcon, QualificationIcon, MembershipIcon } from '@/
 import { JsonLd } from '@/components/seo/JsonLd'
 import { getWebPageSchema, getBreadcrumbSchema } from '@/components/seo/schemas'
 import { SITE, COMPANY } from '@/lib/constants'
-import { images } from '@/data/images'
 
 export const metadata: Metadata = {
   title: 'About Us | Energy Consultants Ennis, Ireland',
@@ -88,11 +86,12 @@ export default function AboutPage() {
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-forest-900/5 rounded-full blur-3xl" />
 
         <Container className="relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="max-w-3xl mx-auto text-center">
             <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>
-              <div className="flex items-center gap-4 mb-6">
+              <div className="flex items-center justify-center gap-4 mb-6">
                 <div className="w-8 h-px bg-copper-500" />
                 <span className="overline text-copper-600">About Us</span>
+                <div className="w-8 h-px bg-copper-500" />
               </div>
 
               <h1 className="headline-md text-forest-900 mb-6">
@@ -104,25 +103,6 @@ export default function AboutPage() {
                 experience. We help property owners, investors, and developers
                 across Ireland achieve energy compliance and sustainability goals.
               </p>
-            </div>
-
-            <div
-              className="relative opacity-0 animate-fade-up"
-              style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}
-            >
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-dramatic">
-                <Image
-                  src={images.about.team}
-                  alt="Professional energy consultant"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  priority
-                />
-              </div>
-              {/* Decorative elements */}
-              <div className="absolute -bottom-4 -left-4 w-24 h-24 border-2 border-copper-500/20 rounded-xl -z-10" />
-              <div className="absolute -top-4 -right-4 w-16 h-16 bg-forest-900 rounded-xl -z-10 opacity-10" />
             </div>
           </div>
         </Container>

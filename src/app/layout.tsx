@@ -30,6 +30,14 @@ export const metadata: Metadata = {
     template: `%s | ${COMPANY.name}`,
   },
   description: SITE.description,
+  icons: {
+    icon: [
+      { url: '/favicon.png', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/favicon.png', type: 'image/png' },
+    ],
+  },
   keywords: [
     'EU Taxonomy Report Ireland',
     'BER Certificate Ireland',
