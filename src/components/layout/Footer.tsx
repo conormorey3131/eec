@@ -139,8 +139,8 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Credit */}
-        <div className="pb-6 text-center">
+        {/* Credit - extra padding on mobile for sticky bar */}
+        <div className="pb-24 lg:pb-6 text-center">
           <p className="text-xs text-ivory-500/60">
             Powered by{' '}
             <a
