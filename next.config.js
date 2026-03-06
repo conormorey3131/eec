@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   // Static export for GitHub Pages
   output: 'export',
 
-  // For GitHub Pages - set to your repo name if not using custom domain
-  // e.g., basePath: '/repo-name'
-  // basePath: '',
+  // No basePath needed with custom domain (eec.ie)
+  // basePath and assetPrefix removed for custom domain
 
   // Trailing slashes work better with GitHub Pages
   trailingSlash: true,

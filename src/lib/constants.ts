@@ -22,7 +22,7 @@ export const COMPANY = {
 // Site configuration
 export const SITE = {
   name: 'Efficient Energy Consultancy',
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://efficientenergy.ie',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://eec.ie',
   description: 'Professional EU Taxonomy Reports, BER Certificates, and energy assessment services across Ireland. 20+ years experience. Qualified HPI Assessor.',
 } as const
 
