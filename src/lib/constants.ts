@@ -3,8 +3,8 @@ export const COMPANY = {
   name: 'Efficient Energy Consultancy',
   legalName: 'Efficient Energy Consultancy',
   person: 'Shane Flanagan',
-  phone: '065 684 1234',
-  phoneClean: '+353656841234', // For tel: links
+  phone: '065 679 4005',
+  phoneClean: '+353656794005', // For tel: links
   mobile: '087 2595798',
   mobileClean: '+353872595798',
   email: 'info@eec.ie',

@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Container } from '@/components/ui/Container'
 import { Button } from '@/components/ui/Button'
-import { MenuIcon, CloseIcon, ChevronDownIcon, PhoneIcon } from '@/components/ui/Icons'
+import { MenuIcon, CloseIcon, ChevronDownIcon, PhoneIcon, EmailIcon } from '@/components/ui/Icons'
 import { NAV_LINKS, COMPANY, PHONE_URL } from '@/lib/constants'
 import { cn } from '@/lib/utils'
 
@@ -126,6 +126,13 @@ export function Header() {
               <PhoneIcon className="w-4 h-4 text-copper-500" />
               <span>{COMPANY.phone}</span>
             </a>
+            <a
+              href={`mailto:${COMPANY.email}`}
+              className="flex items-center gap-2 text-sm font-medium text-charcoal-600 hover:text-forest-900 transition-colors"
+            >
+              <EmailIcon className="w-4 h-4 text-copper-500" />
+              <span>{COMPANY.email}</span>
+            </a>
             <Button href="/contact" size="sm" variant="primary">
               Get a Quote
             </Button>
@@ -245,6 +252,13 @@ export function Header() {
             >
               <PhoneIcon className="w-5 h-5 text-copper-500" />
               <span>{COMPANY.phone}</span>
+            </a>
+            <a
+              href={`mailto:${COMPANY.email}`}
+              className="flex items-center justify-center gap-2 py-3 text-charcoal-600 font-medium"
+            >
+              <EmailIcon className="w-5 h-5 text-copper-500" />
+              <span>{COMPANY.email}</span>
             </a>
           </div>
         </Container>
