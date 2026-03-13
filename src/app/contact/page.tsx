@@ -2,10 +2,10 @@ import { Metadata } from 'next'
 import { Container } from '@/components/ui/Container'
 import { ContactForm } from '@/components/forms/ContactForm'
 import { Breadcrumbs } from '@/components/sections/Breadcrumbs'
-import { PhoneIcon, EmailIcon, CoverageIcon, WhatsAppIcon } from '@/components/ui/Icons'
+import { PhoneIcon, EmailIcon, CoverageIcon } from '@/components/ui/Icons'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { getWebPageSchema, getBreadcrumbSchema } from '@/components/seo/schemas'
-import { SITE, COMPANY, PHONE_URL, WHATSAPP_URL } from '@/lib/constants'
+import { SITE, COMPANY, PHONE_URL } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'Contact Us | Get a Quote for Energy Assessments',
@@ -71,24 +71,6 @@ export default function ContactPage() {
                     <p className="text-copper-600 font-medium">{COMPANY.phone}</p>
                     <p className="text-sm text-charcoal-500 mt-1">
                       Monday - Friday, 8am - 6pm
-                    </p>
-                  </div>
-                </a>
-
-                <a
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex items-start gap-4 p-5 bg-white rounded-xl border border-charcoal-100/50 shadow-soft hover:shadow-elevated hover:-translate-y-0.5 transition-all duration-300"
-                >
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-600 text-white group-hover:bg-emerald-700 transition-colors">
-                    <WhatsAppIcon className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <h3 className="font-display font-medium text-forest-900">WhatsApp</h3>
-                    <p className="text-emerald-600 font-medium">Message Us</p>
-                    <p className="text-sm text-charcoal-500 mt-1">
-                      Quick response during business hours
                     </p>
                   </div>
                 </a>

@@ -78,6 +78,24 @@ export function AirLeakageIcon({ className }: IconProps) {
   )
 }
 
+// Thermal / Heat icon
+export function ThermalIcon({ className }: IconProps) {
+  return (
+    <svg
+      className={cn('w-6 h-6', className)}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z" />
+      <circle cx="11.5" cy="17.5" r="2" />
+    </svg>
+  )
+}
+
 // Acoustic / Sound icon
 export function AcousticIcon({ className }: IconProps) {
   return (
@@ -388,6 +406,7 @@ export function getServiceIcon(iconName: string, className?: string) {
     ventilation: <VentilationIcon className={className} />,
     airleakage: <AirLeakageIcon className={className} />,
     acoustic: <AcousticIcon className={className} />,
+    thermal: <ThermalIcon className={className} />,
   }
   return icons[iconName] || <BERIcon className={className} />
 }

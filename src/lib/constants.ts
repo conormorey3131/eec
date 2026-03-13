@@ -3,9 +3,10 @@ export const COMPANY = {
   name: 'Efficient Energy Consultancy',
   legalName: 'Efficient Energy Consultancy',
   person: 'Shane Flanagan',
-  phone: '087 2595798',
-  phoneClean: '+353872595798', // For tel: links
-  phoneWhatsApp: '353872595798', // For WhatsApp (no + prefix)
+  phone: '065 684 1234',
+  phoneClean: '+353656841234', // For tel: links
+  mobile: '087 2595798',
+  mobileClean: '+353872595798',
   email: 'info@eec.ie',
   address: {
     street: 'Ennis',
@@ -57,6 +58,7 @@ export const NAV_LINKS = [
       { href: '/services/ventilation-validation', label: 'Ventilation Validation' },
       { href: '/services/air-leakage-testing', label: 'Air Leakage Testing' },
       { href: '/services/acoustic-testing', label: 'Acoustic Testing' },
+      { href: '/services/thermal-imaging', label: 'Thermal Imaging' },
     ],
   },
   { href: '/about', label: 'About' },
@@ -72,6 +74,7 @@ export const FOOTER_LINKS = {
     { href: '/services/ventilation-validation', label: 'Ventilation Validation' },
     { href: '/services/air-leakage-testing', label: 'Air Leakage Testing' },
     { href: '/services/acoustic-testing', label: 'Acoustic Testing' },
+    { href: '/services/thermal-imaging', label: 'Thermal Imaging' },
   ],
   company: [
     { href: '/about', label: 'About Us' },
@@ -83,9 +86,6 @@ export const FOOTER_LINKS = {
     { href: '/locations/ireland', label: 'Nationwide Ireland' },
   ],
 } as const
-
-// WhatsApp link
-export const WHATSAPP_URL = `https://wa.me/${COMPANY.phoneWhatsApp}?text=${encodeURIComponent('Hi, I\'m interested in your energy consultancy services.')}`
 
 // Phone link
 export const PHONE_URL = `tel:${COMPANY.phoneClean}`
