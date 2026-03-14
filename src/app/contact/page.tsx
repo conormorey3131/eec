@@ -70,7 +70,7 @@ export default function ContactPage() {
                     <h3 className="font-display font-medium text-forest-900">Call Us</h3>
                     <p className="text-copper-600 font-medium">{COMPANY.phone}</p>
                     <p className="text-sm text-charcoal-500 mt-1">
-                      Monday - Friday, 8am - 6pm
+                      Monday - Friday, 9am - 5pm
                     </p>
                   </div>
                 </a>
