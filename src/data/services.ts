@@ -98,6 +98,82 @@ export const services: Service[] = [
     ],
   },
   {
+    slug: 'home-performance-index',
+    title: 'Home Performance Index (HPI) Certification',
+    shortTitle: 'Home Performance Index',
+    description: 'Ireland\'s national green home certification for new residential developments, assessing environment, health, economics, quality, and location.',
+    metaDescription: 'Home Performance Index (HPI) certification in Ireland. Qualified HPI assessors for new residential developments. EU Taxonomy aligned, managed by the Irish Green Building Council. Nationwide service.',
+    icon: 'hpi',
+    features: [
+      'HPI and Gold HPI certification pathways',
+      'Assessment against 30+ verifiable indicators',
+      'Environment, Health & Wellbeing, Economics, Quality Assurance and Sustainable Location categories',
+      'EU Sustainable Finance Taxonomy alignment',
+      'Level(s) framework and WELL Communities alignment',
+      'Design-stage and post-construction verification',
+    ],
+    benefits: [
+      'Credible third-party green home label for lenders and investors',
+      'Differentiate new developments on quality and sustainability',
+      'Meet EU Taxonomy and green finance eligibility criteria',
+      'Provide homebuyers with verified sustainability credentials',
+      'Identify design improvements early, before construction',
+    ],
+    process: [
+      {
+        step: 1,
+        title: 'Initial Consultation',
+        description: 'We review the development, target certification level, and HPI indicators relevant to your scheme.',
+      },
+      {
+        step: 2,
+        title: 'Design Stage Assessment',
+        description: 'We evaluate the design against HPI indicators across all five categories and flag gaps early.',
+      },
+      {
+        step: 3,
+        title: 'Evidence Collection',
+        description: 'We gather supporting documentation — specifications, drawings, test results, and supplier data.',
+      },
+      {
+        step: 4,
+        title: 'Construction Verification',
+        description: 'Post-construction checks including airtightness results and verification that the build matches the design.',
+      },
+      {
+        step: 5,
+        title: 'Certification',
+        description: 'Final submission to the Irish Green Building Council for HPI or Gold HPI certification.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the Home Performance Index?',
+        answer: 'Home Performance Index (HPI) is Ireland\'s national certification system for new residential developments, managed by the Irish Green Building Council (IGBC). It assesses homes against over 30 verifiable indicators across five categories — Environment, Health & Wellbeing, Economics, Quality Assurance, and Sustainable Location — and is aligned with the EU Sustainable Finance Taxonomy, the Level(s) framework, and the international WELL certification for communities.',
+      },
+      {
+        question: 'Who is HPI certification for?',
+        answer: 'HPI is aimed at developers, housebuilders, local authorities, and approved housing bodies delivering new residential schemes in Ireland. It provides a credible green home label for lenders, investors, and homebuyers, and helps developments meet EU Taxonomy green finance eligibility criteria.',
+      },
+      {
+        question: 'What is the difference between HPI and Gold HPI?',
+        answer: 'Developments are certified as either HPI or Gold HPI depending on performance. Both require passing mandatory credits in key indicators, with Gold HPI demanding a higher overall score and stronger performance across the Environment, Health & Wellbeing, Economics, Quality Assurance, and Sustainable Location categories.',
+      },
+      {
+        question: 'How does HPI relate to BER and EU Taxonomy?',
+        answer: 'BER measures operational energy performance on an A–G scale. HPI is much broader — it assesses sustainability, health, quality, and location in addition to energy, and it is explicitly aligned with the EU Sustainable Finance Taxonomy. A BER is one input into an HPI assessment, and HPI provides the wider evidence base that investors and lenders increasingly require.',
+      },
+      {
+        question: 'When should we engage an HPI assessor on a project?',
+        answer: 'Ideally at design stage. Many HPI indicators — particularly around location, site selection, materials, daylight, and acoustics — are difficult or expensive to address after design is fixed. Early engagement lets us flag gaps before they become costly and gives the project the best chance of achieving Gold HPI.',
+      },
+      {
+        question: 'Who manages the HPI certification scheme?',
+        answer: 'HPI is managed and reviewed by the Irish Green Building Council (IGBC), a non-profit membership organisation with over 200 members drawn from academia, architecture, engineering, construction, and the environmental sector. HPI has been recognised by the European Construction Sector Observatory with a 5 out of 5 rating for best practice and transparency.',
+      },
+    ],
+  },
+  {
     slug: 'ber-certificates',
     title: 'BER Certificates',
     shortTitle: 'BER Certs',

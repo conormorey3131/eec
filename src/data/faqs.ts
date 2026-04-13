@@ -15,7 +15,7 @@ export const generalFaqs: FAQ[] = [
   },
   {
     question: 'What qualifications do your assessors have?',
-    answer: 'Our lead assessor, Shane Flanagan, has over 20 years of experience as a domestic BER assessor and is a qualified HPI (Heat Pump Installer) Assessor. We are members of the BER Assessors Association of Ireland.',
+    answer: 'Our lead assessor, Shane Flanagan, has over 20 years of experience as a domestic BER assessor and is a qualified HPI (Home Performance Index) Assessor — Ireland\'s national certification system for new residential developments, managed by the Irish Green Building Council. We are members of the BER Assessors Association of Ireland.',
   },
   {
     question: 'How quickly can you complete an assessment?',
