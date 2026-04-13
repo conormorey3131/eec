@@ -16,7 +16,7 @@ import { images } from '@/data/images'
 export const metadata: Metadata = {
   title: 'EU Taxonomy Reports & BER Certificates Ireland | Efficient Energy Consultancy',
   description:
-    'Professional EU Taxonomy Reports, BER Certificates, and energy assessment services across Ireland. 20+ years experience. Qualified HPI Assessor. Nationwide coverage.',
+    'Professional EU Taxonomy Reports, Home Performance Index (HPI) certification, BER Certificates, and energy assessment services across Ireland. 20+ years experience. Nationwide coverage.',
   alternates: {
     canonical: SITE.url,
   },

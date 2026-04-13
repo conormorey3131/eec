@@ -12,7 +12,7 @@ const reasons = [
   {
     title: 'Qualified HPI Assessor',
     description:
-      'Heat Pump Installer assessor qualification demonstrates deep understanding of modern energy systems and building performance.',
+      'Home Performance Index certified — qualified to assess new residential developments against Ireland\'s national green home standard, aligned with EU Taxonomy and Level(s) frameworks.',
   },
   {
     title: 'Industry Membership',

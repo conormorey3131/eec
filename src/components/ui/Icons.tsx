@@ -398,10 +398,29 @@ export function DeveloperIcon({ className }: IconProps) {
   )
 }
 
+// Home Performance Index icon
+export function HPIIcon({ className }: IconProps) {
+  return (
+    <svg
+      className={cn('w-6 h-6', className)}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M3 10l9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+      <path d="M9 14l2 2 4-4" />
+    </svg>
+  )
+}
+
 // Service icon map helper
 export function getServiceIcon(iconName: string, className?: string) {
   const icons: Record<string, React.ReactNode> = {
     taxonomy: <TaxonomyIcon className={className} />,
+    hpi: <HPIIcon className={className} />,
     ber: <BERIcon className={className} />,
     ventilation: <VentilationIcon className={className} />,
     airleakage: <AirLeakageIcon className={className} />,

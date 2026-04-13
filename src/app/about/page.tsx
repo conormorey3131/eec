@@ -10,7 +10,7 @@ import { SITE, COMPANY } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'About Us | Energy Consultants Ennis, Ireland',
-  description: `Learn about ${COMPANY.name} and ${COMPANY.person}. Over 20 years experience as BER assessor, qualified HPI Assessor, member of BER Assessors Association of Ireland.`,
+  description: `Learn about ${COMPANY.name} and ${COMPANY.person}. Over 20 years experience as BER assessor, qualified Home Performance Index (HPI) Assessor, member of BER Assessors Association of Ireland.`,
   alternates: {
     canonical: `${SITE.url}/about`,
   },
@@ -27,7 +27,7 @@ const credentials = [
     icon: QualificationIcon,
     title: 'Qualified HPI Assessor',
     description:
-      'Heat Pump Installer assessor qualification demonstrates expertise in modern heating technologies and building energy systems.',
+      'Home Performance Index assessor qualified to certify new residential developments under Ireland\'s national green home standard, managed by the Irish Green Building Council and aligned with the EU Sustainable Finance Taxonomy.',
   },
   {
     icon: MembershipIcon,
@@ -295,6 +295,7 @@ export default function AboutPage() {
             <ul className="space-y-4 max-w-xl mx-auto">
               {[
                 { text: 'EU Taxonomy Reports', highlight: true, note: 'Our primary specialism' },
+                { text: 'Home Performance Index (HPI) Certification' },
                 { text: 'BER Certificates (Domestic & Commercial)' },
                 { text: 'Ventilation Validation Certificates' },
                 { text: 'Air Leakage Test Certificates' },

@@ -24,7 +24,7 @@ export const COMPANY = {
 export const SITE = {
   name: 'Efficient Energy Consultancy',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://eec.ie',
-  description: 'Professional EU Taxonomy Reports, BER Certificates, and energy assessment services across Ireland. 20+ years experience. Qualified HPI Assessor.',
+  description: 'Professional EU Taxonomy Reports, Home Performance Index (HPI) certification, BER Certificates, and energy assessment services across Ireland. 20+ years experience.',
 } as const
 
 // Trust signals
@@ -54,6 +54,7 @@ export const NAV_LINKS = [
   {
     label: 'Services',
     children: [
+      { href: '/services/home-performance-index', label: 'Home Performance Index' },
       { href: '/services/ber-certificates', label: 'BER Certificates' },
       { href: '/services/ventilation-validation', label: 'Ventilation Validation' },
       { href: '/services/air-leakage-testing', label: 'Air Leakage Testing' },
@@ -70,6 +71,7 @@ export const NAV_LINKS = [
 export const FOOTER_LINKS = {
   services: [
     { href: '/eu-taxonomy-reports', label: 'EU Taxonomy Reports' },
+    { href: '/services/home-performance-index', label: 'Home Performance Index' },
     { href: '/services/ber-certificates', label: 'BER Certificates' },
     { href: '/services/ventilation-validation', label: 'Ventilation Validation' },
     { href: '/services/air-leakage-testing', label: 'Air Leakage Testing' },
